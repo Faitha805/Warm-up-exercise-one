@@ -73,7 +73,6 @@ assigning_grades()
 #  If the student selects 3, the account balance should be displayed.
 
 
-def money_transaction():
     account_balance = 0
     run = 1
 
@@ -128,8 +127,6 @@ def money_transaction():
         if run!= 1:
             print("Thank you for using our WITI Academy Sacco")
             break
-
-money_transaction()
 
 
 
