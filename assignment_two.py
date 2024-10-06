@@ -38,7 +38,6 @@ print("Grading Student's Mark")
 mark_scored = int(input("Enter the mark scored: "))
 
 #Grading a students mark
-def assigning_grades():
     if 90 <= mark_scored >= 100 :
         print("Gradeis A")
 
@@ -57,8 +56,6 @@ def assigning_grades():
     else :
         print("Fail") 
 
-#Using the function
-assigning_grades()
   
 
 #4
