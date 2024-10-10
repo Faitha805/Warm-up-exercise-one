@@ -18,7 +18,7 @@ print(f"The volume of the sphere with a radius {radius} is {volume_of_the_sphere
 base = int(input("Enter the length of the base of the triangle: "))
 height = int(input("Enter the height of the triangle: "))
 area = ((1/2) * base * height)
-print(f"The area of the triamgle with a base of {base} and height of {height} is: {area} ")
+print(f"The area of the triangle with a base of {base} and height of {height} is: {area} ")
 
 #3
 # WITI has tasked you to automate a simple grading system. 
@@ -39,7 +39,7 @@ mark_scored = int(input("Enter the mark scored: "))
 
 #Grading a students mark
 if 90 <= mark_scored <= 100 :
-    print("Gradeis A")
+    print("Grade is A")
 
 elif 80 <= mark_scored <= 89 :
     print("Grade is B")
@@ -56,7 +56,7 @@ elif 50 <= mark_scored <= 59 :
 else :
     print("Fail") 
 
-  
+
 
 #4
 #  WITI Academy is proposing a Sacco to help students save their money. 
@@ -80,57 +80,45 @@ while run == 1:
     print(" 2. Withdraw Money")        
     print(" 3. Check Balance")
 
-    student_option = int(input("Enter your selection (1,2 or 3): "))
+student_option = int(input("Enter your selection (1,2 or 3): "))
 
-    #performing transaction based on the student's choice
-    if student_option == 1:
-       print("Depositing Money...")
+#performing transaction based on the student's choice
+if student_option == 1:
+    print("Depositing Money...")
 
-       deposit_amount = int(input("Enter amount of money to be deposited: "))
-       #Since deposit amount should be >1000
-       if deposit_amount < 1000 :
-          print("The minimum amount to deposit is 1000")
+    deposit_amount = int(input("Enter amount of money to be deposited: "))
+    #Since deposit amount should be >1000
+    if deposit_amount < 1000 :
+        print("The minimum amount to deposit is 1000")
 
-       else :
-          account_balance += deposit_amount
-          print(f"You have successfully deposited {deposit_amount}, your new account balance is {account_balance}.")
+    else :
+        account_balance += deposit_amount
+        print(f"You have successfully deposited {deposit_amount}, your new account balance is {account_balance}.")
 
-    elif student_option ==2:
-        print("Withdrawing Money...")
+elif student_option ==2:
+    print("Withdrawing Money...")
 
-        withdraw_amount = int(input("Enter amount of money to be deposited: "))
-        if account_balance == 0:
-            print("Your account balance is 0")
+    withdraw_amount = int(input("Enter amount of money to be deposited: "))
+    if account_balance == 0:
+        print("Your account balance is 0")
 
-        elif withdraw_amount < 500:
-            print("The minimum amount of money to withdraw is 500.")
+    elif withdraw_amount < 500:
+        print("The minimum amount of money to withdraw is 500.")
 
-        elif withdraw_amount > account_balance:
-            print("You do not have sufficient funds to complete  this task.")
+    elif withdraw_amount > account_balance:
+        print("You do not have sufficient funds to complete  this task.")
 
-        else :
-            account_balance -= deposit_amount
-            print("You have successfully withdrawn {withdraw_amount}. Your new account balance is {account_balance}")
+    else :
+        account_balance -= deposit_amount
+        print("You have successfully withdrawn {withdraw_amount}. Your new account balance is {account_balance}")
 
-     elif student_option ==3:
-         print(f"Your account balance is {account_balance}")
+elif student_option ==3:
+    print(f"Your account balance is {account_balance}")
 
-     else :
-         print("You've entered a wrong choice, please enter 1, 2 or 3.")
+else :
+    print("You've entered a wrong choice, please enter 1, 2 or 3.")
             
-     run = int(input("Tocontinue, enter 1. To exit, enterany other number."))
-     if run!= 1:
-       print("Thank you for using our WITI Academy Sacco")
-       break
-
-
-
-
-
-
-
-
-
-
-
-
+run = int(input("To continue, enter 1. To exit, enter any other number."))
+if run!= 1:
+    print("Thank you for using our WITI Academy Sacco")
+    break
