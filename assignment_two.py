@@ -38,19 +38,19 @@ print("Grading Student's Mark")
 mark_scored = int(input("Enter the mark scored: "))
 
 #Grading a students mark
-    if 90 <= mark_scored >= 100 :
+    if 90 <= mark_scored <= 100 :
         print("Gradeis A")
 
-    elif 80 <= mark_scored >= 89 :
+    elif 80 <= mark_scored <= 89 :
         print("Grade is B")
 
-    elif 70 <= mark_scored >= 79 :
+    elif 70 <= mark_scored <= 79 :
         print("Grade is C")
 
-    elif 60 <= mark_scored >= 69 :
+    elif 60 <= mark_scored <= 69 :
         print("Grade is D")
 
-    elif 50 <= mark_scored >= 59 :
+    elif 50 <= mark_scored <= 59 :
         print("Grade is E")
 
     else :
