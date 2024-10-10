@@ -38,23 +38,23 @@ print("Grading Student's Mark")
 mark_scored = int(input("Enter the mark scored: "))
 
 #Grading a students mark
-    if 90 <= mark_scored <= 100 :
-        print("Gradeis A")
+if 90 <= mark_scored <= 100 :
+    print("Gradeis A")
 
-    elif 80 <= mark_scored <= 89 :
-        print("Grade is B")
+elif 80 <= mark_scored <= 89 :
+    print("Grade is B")
 
-    elif 70 <= mark_scored <= 79 :
-        print("Grade is C")
+elif 70 <= mark_scored <= 79 :
+    print("Grade is C")
 
-    elif 60 <= mark_scored <= 69 :
-        print("Grade is D")
+elif 60 <= mark_scored <= 69 :
+    print("Grade is D")
 
-    elif 50 <= mark_scored <= 59 :
-        print("Grade is E")
+elif 50 <= mark_scored <= 59 :
+    print("Grade is E")
 
-    else :
-        print("Fail") 
+else :
+    print("Fail") 
 
   
 
@@ -70,60 +70,58 @@ mark_scored = int(input("Enter the mark scored: "))
 #  If the student selects 3, the account balance should be displayed.
 
 
-    account_balance = 0
-    run = 1
+account_balance = 0
+run = 1
 
-    while run == 1:
-        print(" Welcome to, WITIAcademy Sacco.")
-        #menu
-        print(" 1. Deposit Money")
-        print(" 2. Withdraw Money")        
-        print(" 3. Check Balance")
+while run == 1:
+    print(" Welcome to, WITIAcademy Sacco.")
+    #menu
+    print(" 1. Deposit Money")
+    print(" 2. Withdraw Money")        
+    print(" 3. Check Balance")
 
-        student_option = int(input("Enter your selection (1,2 or 3): "))
+    student_option = int(input("Enter your selection (1,2 or 3): "))
 
-        #performing transaction based on the student's choice
-        if student_option == 1:
-            print("Depositing Money...")
+    #performing transaction based on the student's choice
+    if student_option == 1:
+       print("Depositing Money...")
 
-            deposit_amount = int(input("Enter amount of money to be deposited: "))
-            #Since deposit amount should be >1000
-            if deposit_amount < 1000 :
-                ptint("The minimum amount to deposit is 1000")
+       deposit_amount = int(input("Enter amount of money to be deposited: "))
+       #Since deposit amount should be >1000
+       if deposit_amount < 1000 :
+          print("The minimum amount to deposit is 1000")
 
-            else :
-                account_balance += deposit_amount
-                print(f"You have successfully deposited {deposit_amount}, your new account balance is {account_balance}.")
+       else :
+          account_balance += deposit_amount
+          print(f"You have successfully deposited {deposit_amount}, your new account balance is {account_balance}.")
 
-        elif student_option ==2:
-            print("Withdrawing Money...")
+    elif student_option ==2:
+        print("Withdrawing Money...")
 
-            withdraw_amount = int(input("Enter amount of money to be deposited: "))
-            if account_balance == 0:
-                print("Your account balance is 0")
+        withdraw_amount = int(input("Enter amount of money to be deposited: "))
+        if account_balance == 0:
+            print("Your account balance is 0")
 
-            elif withdraw_amount < 500:
-                print("The minimum amount of money to withdraw is 500.")
+        elif withdraw_amount < 500:
+            print("The minimum amount of money to withdraw is 500.")
 
-            elif withdraw_amount > account_balance:
-                print("You do not have sufficient funds to complete  this task.")
-
-            
-
-            else :
-                account_balance -= deposit_amount
-                print("You have successfully withdrawn {withdraw_amount}. Your new account balance is {account_balance}")
-
-        elif student_option ==3:
-            print(f"Your account balance is {account_balance}")
+        elif withdraw_amount > account_balance:
+            print("You do not have sufficient funds to complete  this task.")
 
         else :
-            print("You've entered a wrong choice, please enter 1, 2 or 3.")
+            account_balance -= deposit_amount
+            print("You have successfully withdrawn {withdraw_amount}. Your new account balance is {account_balance}")
+
+     elif student_option ==3:
+         print(f"Your account balance is {account_balance}")
+
+     else :
+         print("You've entered a wrong choice, please enter 1, 2 or 3.")
             
-        run = int(input("Tocontinue, enter 1. To exit, enterany other number."))
-        if run!= 1:
-            print("Thank you for using our WITI Academy Sacco")
-            break
+     run = int(input("Tocontinue, enter 1. To exit, enterany other number."))
+     if run!= 1:
+       print("Thank you for using our WITI Academy Sacco")
+       break
 
 
 
